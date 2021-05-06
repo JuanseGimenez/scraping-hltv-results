@@ -1,18 +1,17 @@
 # Scraping HLTV results
 
-Create json object with data from hltv.org
+Return Array object with data from hltv.org with results
 
-* open-uri
-* nokogiri
-* json
+### Configuration:
 
-## Configuration:
-
-```
-gem install nokogiri
+```bash
+bundle install
 ```
 
+### Test:
+
 ```
-chmod +x scraping.rb
-./scraping.rb
+bundle exec rake spec
 ```
+
+## TODO: Move to hltv gem and split logic in classes
