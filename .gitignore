@@ -1,0 +1,16 @@
+# Claude / assistant tooling
+.claude/
+.claude-*/
+CLAUDE.md
+.playwright-mcp/
+
+# Ruby
+*.gem
+.bundle/
+/vendor/bundle/
+/.yardoc/
+
+# OS / editor
+.DS_Store
+*.swp
+.ruby-lsp/

@@ -1,0 +1,22 @@
+AllCops:
+  TargetRubyVersion: 3.3
+  NewCops: enable
+
+# #parse is one flat mapping of an HTML row onto the result schema.
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/hltv_scrap/parser.rb'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'lib/hltv_scrap/parser.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*'
+
+Style/Documentation:
+  Enabled: true
+
+Layout/LineLength:
+  Max: 100
