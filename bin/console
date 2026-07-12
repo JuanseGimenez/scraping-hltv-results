@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'irb'
+require_relative '../lib/hltv_scrap'
+
+# Loads the results fixture without hitting the network or opening Chrome.
+def fixture_results
+  html = File.read(File.expand_path('../test/fixtures/results.html', __dir__))
+  HltvScrap::Parser.new(html).results
+end
+
+puts 'HltvScrap loaded.'
+puts '  HltvScrap.results   -> live scrape (needs headed Chrome; run under xvfb-run on a server)'
+puts '  fixture_results     -> parse the saved fixture (no network)'
+
+IRB.start(__FILE__)
